@@ -5,6 +5,7 @@
   @include flex(column, initial, center);
   text-align: center;
   gap: $gutter-1;
+  padding-block: $p-11;
 
   &__title {
     font-size: $fs-6;
