@@ -1,2 +1,13 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.hero {
+  @include flex(column, initial, center);
+  text-align: center;
+  gap: $gutter-1;
+
+  &__title {
+    font-size: $fs-6;
+    line-height: normal;
+  }
+}

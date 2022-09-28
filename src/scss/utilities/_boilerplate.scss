@@ -38,7 +38,8 @@ body {
   background-color: $black;
   color: $white;
   overflow: hidden;
-  padding-inline: $base-p;
+  padding-inline: $p-4;
+  line-height: 1.5;
 }
 
 a, 
