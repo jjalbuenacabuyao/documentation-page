@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.main-btn {
+  background-color: $white;
+  border: none;
+  font-family: $title;
+  font-size: $base-fs;
+  font-weight: 700;
+  padding: 0.7rem 1.8rem;
+  border-radius: 1.5rem;
+  outline: 1px solid $white;
+
+  &:hover,
+  &:active {
+    background-color: $black;
+    color: $white;
+  }
+}
