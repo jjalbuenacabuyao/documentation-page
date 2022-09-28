@@ -3,5 +3,5 @@
 
 .header {
   @include flex(row, space-between, center);
-  padding-block: $base-p;
+  padding-block: $p-2;
 }
