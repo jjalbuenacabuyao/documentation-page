@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/Product\ Sans\ Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/Product\ Sans\ Bold.ttf') format('ttf');
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: $base-fs;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: $fs-1;
+  background-color: $black;
+  color: $white;
+  overflow: hidden;
+  padding-inline: $base-p;
+}
+
+a, 
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+button[data-menu-button]{
+  @include flex(column, space-between);
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.25rem;
+  border: 0;
+
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    border-radius: 3px;
+  }
+
+  :nth-child(2){
+    width: 60%;
+  }
+}

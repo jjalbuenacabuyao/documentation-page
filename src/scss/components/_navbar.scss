@@ -1,0 +1,7 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.header {
+  @include flex(row, space-between, center);
+  padding-block: $base-p;
+}
