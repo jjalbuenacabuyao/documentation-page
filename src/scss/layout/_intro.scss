@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.intro {
+  @include flex(column);
+  gap: $gutter-1;
+  padding: $p-8 $p-2;
+  max-width: 60ch;
+  margin-inline: auto;
+
+  &__title {
+    font-size: $fs-3;
+    font-family: $title;
+
+    span {
+      margin-inline-end: 0.5rem;
+      opacity: .65;
+    }
+  }
+
+  &__paragraph {
+    text-indent: 1.5rem;
+  }
+
+  &__paragraph,
+  li {
+    text-align: justify;
+  }
+
+  &__list {
+    @include flex(column);
+    gap: $gutter-1;
+    padding-inline-start: 1rem;
+  }
+
+  li {
+    list-style: disc;
+    
+  }
+}
