@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.hero__wrapper{
+  display: grid;
+  height: 100vh;
+
+  .header,
+  .hero {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .header {
+    align-self: flex-start;
+  }
+
+  .hero {
+    align-self: center;
+  }
+}
