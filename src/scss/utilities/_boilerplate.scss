@@ -34,7 +34,7 @@ h6 {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: $fs-1;
+  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
   background-color: $black;
   color: $white;
   overflow-x: hidden;
@@ -42,7 +42,7 @@ body {
   min-height: 100vh;
 }
 
-a, 
+a,
 a:visited,
 a:active {
   text-decoration: none;
